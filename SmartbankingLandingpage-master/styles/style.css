@@ -1,0 +1,329 @@
+
+@import "./font.css";
+@import "./var.css";
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+    background: #FFFFFF;
+}
+
+.brand_block .container .header {
+    margin-left: 142px;
+}
+
+.brand_block .container .header nav ul li a {
+    list-style: none;
+    text-decoration: none;
+    border-bottom: none;
+    font-family: Roboto;
+    font-weight: 500;
+    display: flex;
+    font-size: var(--nav-title);
+    color: var(--nav-text-color);
+}
+.brand_block .container .header nav ul li {
+    list-style: none;
+    flex-direction: row;
+}
+
+.brand_block .container .header nav ul {
+    display: flex;
+    gap: 45px;
+}
+
+.brand_block .container .header {
+    display: flex;
+    flex-direction: row;
+    margin-top: 55px;
+}
+
+.brand_block .container .header .Besnik {
+    margin-left: 301px;
+    text-align: center;
+    height: 15px;
+}
+
+.brand_block .container .header .Bag {
+    margin-left: 465px;
+    margin-top: -12px;
+}
+
+.brand_block .container .content {
+    margin-left: 140px;
+    height: 900px;
+}
+
+.brand_block .container .content .item .main_title {
+    margin-top: 95px;
+    margin-bottom: 48px;
+    position: relative;
+    font-size: var(--w-title);
+    white-space: nowrap;
+    background: transparent;
+    font-family: Bai Jamjuree, Bold;
+    font-weight: 700;
+    display: block;
+    width: 432px;
+    z-index: 2;
+    &::after {
+        content: url('../assets/Ellipse 787(1).png');
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        left: -6px;
+        top: 115px;
+        z-index: -1;
+    }
+}
+
+.brand_block .container .content .item .main_subtitle {
+    font-size: 18px;
+    font-family: Roboto;
+    color: var(--secondary-color);
+    margin-bottom: 40px;
+    display: block;
+    width: 432px;
+}
+
+.brand_block .container .content .item .btn {
+        border: none;
+        background: transparent;
+        padding: 0;
+        margin: 0;
+        font: inherit;
+        color: inherit;
+        cursor: pointer;
+        outline: none;
+        align-items: center;
+        display: flex;
+}
+
+.brand_block .container .content .item .btn span {
+    align-items: center;
+    height: 50px;
+    font-family: Roboto;
+    font-weight: 500;
+    color: var(--title-color);
+    font-size: 19px;
+    padding-top: 15px;
+    padding-left: 18px;
+}
+
+.brand_block .container .content {
+    position: relative;
+}
+
+.brand_block .content .item .banking {
+    grid-area: banking;
+    width: 432px;
+}
+
+.brand_block .content .item .bank_card_img {
+    grid-area: bank_card_img;
+    margin-left: -70px;
+    margin-top: 30px;
+}
+
+.brand_block .content .item {
+    display: grid;
+    grid-row-gap: 0;
+    grid-template-areas: "banking bank_card_img";
+}
+
+.brand_block .content .shopping_block .hot_deals {
+    width: 233px;
+}
+
+.brand_block .content .shopping_block .hot_deals h2 {
+    font-size: 35px;
+    font-family: Bai Jamjuree, Bold;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.brand_block .content .shopping_block .hot_deals .subtitle {
+    font-size: var(--subtitle);
+    font-family: Roboto;
+    color: var(--secondary-color);
+}
+
+.brand_block .content .shopping_block {
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+}
+
+.brand_block .content .shopping_block .item {
+    display: flex;
+    flex-direction: column;
+    width: 188px;
+}
+
+.brand_block .content .shopping_block .item img {
+    width: 32px;
+    height: 35px;
+    margin-bottom: 30px;
+}
+
+.brand_block .content .shopping_block .item .title {
+    font-size: 20px;
+    height: 20px;
+    font-family: Inter;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.brand_block .content .shopping_block .item .subtitle {
+    font-size: var(--subtitle);
+    font-family: Roboto;
+    color: var(--secondary-color);
+}
+
+.pacman_block {
+    display: flex;
+    margin-top: 52px;
+    height: 417px;
+    background: #ADD8E6;
+    &::after {
+        content: url('../assets/Pacman.png');
+        position: relative;
+        left: -504px;
+        top: -35px;
+        z-index: 1;
+    }
+}
+
+.pacman_block .item {
+    width: 256px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+    margin-top: 134px;
+
+}
+
+.pacman_block .item .title {
+    font-family: Bai Jamjuree, Bold;
+    font-size: var(--pacman-title);
+    margin-bottom: 16px;
+}
+
+.pacman_block .item .subtitle {
+    font-size: var(--subtitle);
+    font-family: Roboto;
+    color: var(--secondary-color);
+}
+
+.statistic_block .header .title {
+    margin-left: 398px;
+    margin-top: 73px;
+    font-weight: 700;
+    font-size: var(--w-title);
+    font-family: Bai Jamjuree, Bold;
+    margin-bottom: 40px;
+}
+
+.statistic_block .header .subtitle {
+    font-size: var(--subtitle);
+    font-family: Roboto;
+    color: var(--secondary-color);
+    width: 641px;
+    margin-left: 399px;
+    text-align: center;
+    margin-bottom: 91px;
+}
+
+.statistic_block .header img {
+    margin-left: 175px;
+    margin-bottom: 73px;
+}
+
+.handoff_block {
+    display: flex;
+    flex-direction: row;
+    height: 619px;
+
+}
+
+.handoff_block img{
+    margin-top: 56px;
+}
+
+.handoff_block .smarter .m-title {
+    margin-top: 69px;
+    font-size: 52px;
+    font-family: Bai Jamjuree, Bold;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-left: 113px;
+}
+
+.handoff_block .smarter .m-subtitle {
+    font-size: 28px;
+    font-family: Roboto;
+    color: var(--secondary-color);
+    margin-left: 113px;
+    margin-bottom: 65px;
+}
+
+.handoff_block .smarter .item .title {
+    font-size: var(--title);
+    font-family: Bai Jamjuree, Bold;
+    grid-area: title;
+    font-weight: 600;
+    margin-bottom: 9px;
+    height: 20px;
+
+}
+
+.handoff_block .smarter .item .subtitle {
+    font-size: var(--subtitle);
+    font-family: Roboto;
+    color: var(--secondary-color);
+    grid-area: subtitle;
+    width: 286px;
+    margin-bottom: 30px;
+    height: 16px;
+}
+
+.handoff_block .smarter .item img {
+    grid-area: img;
+    margin-top: 0;
+    margin-left: 110px;
+    transform: scale(1.5);
+}
+
+.handoff_block .smarter .item {
+    display: grid;
+    grid-gap: 0;
+    grid-column-gap: 30px;
+    margin-bottom: 30px;
+    margin-left: 0;
+    grid-template-areas: "img title"
+                         "img subtitle";
+}
+
+.newsletter_block {
+    background: #41B3F4;
+    height: 522px;
+}
+
+
+.newsletter_block .text {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 18px;
+    width: 120px;
+    color: #414449;
+    margin-left: 166px;
+    margin-top: 144px;
+    padding: 144px 0px;
+}
