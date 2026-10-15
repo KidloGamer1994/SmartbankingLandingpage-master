@@ -36,7 +36,7 @@
 
 .brand_block .container .header nav ul {
     display: flex;
-    gap: 45px;
+    gap: 61px;
 }
 
 .brand_block .container .header {
@@ -314,6 +314,8 @@
 .newsletter_block {
     background: #41B3F4;
     height: 522px;
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -324,6 +326,98 @@
     width: 120px;
     color: #414449;
     margin-left: 166px;
-    margin-top: 144px;
+    margin-top: 0;
     padding: 144px 0px;
+    &::after {
+        content: url('../assets/round_text.png');
+        position: relative;
+        left: -5px;
+        top: 29px;
+        z-index: 1;
+    }
+
+}
+.newsletter_block .title {
+    font-family: Bai Jamjuree, Bold;
+    font-weight: 700;
+    font-size: 60px;
+    margin-left: 164px;
+    margin-top: 114px;
+    width: 430px;
+
+    &::after {
+        content: "";
+        background: #718176;
+        width: 8px;
+        height: 133px;
+        position: absolute;
+        left: -15px;
+        bottom: 229px;
+    }
+}
+.newsletter_block .subscribe .btn {
+    margin-left: 164px;
+    text-decoration: none;
+    border: none;
+    background: #E15C19;
+    color: #FFFFFF;
+    width: 160px;
+    height: 58px;
+    font-family: Roboto;
+    font-size: var(--subtitle);
+    cursor: pointer;
+    margin-top: 42px;
+}
+
+.newsletter_block img {
+    scale: 1.75;
+    margin-leftt: -45px;
+}
+
+footer nav ul li a {
+    list-style: none;
+    text-decoration: none;
+    border-bottom: none;
+    font-family: Roboto;
+    font-weight: 500;
+    display: flex;
+    font-size: var(--nav-title);
+    color: var(--nav-text-color);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+}
+
+footer nav ul {
+    display: flex;
+    gap: 45px;
+}
+
+footer nav ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+footer nav {
+    margin-left: 165px;
+    margin-top: 90px;
+    grid-area: nav;
+    width: 335px;
+}
+
+footer img {
+    grid-area: img;
+    margin-left: 671px;
+    text-align: center;
+    height: 15px;
+    margin-top: -15px;
+}
+
+footer .auth {
+    display: flex;
+    grid-area: auth;
+    width: 335px;
 }
